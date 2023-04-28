@@ -34,5 +34,6 @@ client.login(process.env.TOKEN);
 
 app.get("/", (req, res) => {
 	res.send("User list");
+	console.log("User accessed home");
 });
 app.listen(3000);
