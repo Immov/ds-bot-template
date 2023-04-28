@@ -1,5 +1,7 @@
 require('dotenv').config();
 const { Client, IntentsBitField } = require('discord.js');
+const express = require("express");
+const app = express();
 
 const client = new Client({
   intents: [
@@ -28,3 +30,9 @@ client.on('interactionCreate', (interaction) => {
 });
 
 client.login(process.env.TOKEN);
+
+
+app.get("/", (req, res) => {
+	res.send("User list");
+});
+app.listen(3000);
