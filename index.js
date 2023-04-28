@@ -18,7 +18,7 @@ client.on('interactionCreate', (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
   if (interaction.commandName === 'hey') {
-	  console.log("user sends Hey);
+	  console.log("user sends Hey");
     return interaction.reply('hey!');
   }
   if (interaction.commandName === 'ping') {
