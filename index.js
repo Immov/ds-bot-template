@@ -21,7 +21,6 @@ client.on('interactionCreate', (interaction) => {
 	  console.log("user sends Hey);
     return interaction.reply('hey!');
   }
-
   if (interaction.commandName === 'ping') {
     return interaction.reply('Pong!');
 	console.log("use sends ping");
